@@ -513,15 +513,15 @@ def main() -> None:
             signif_global_df, signif_pairwise_df = run_significance_analysis(feature_by_subject)
 
             output_png = str(output_dir / f"{sheet_name}_by_age_group.png")
-            output_csv = str(output_dir / f"{sheet_name}_merged_long.csv")
-            output_feature_csv = str(output_dir / f"{sheet_name}_feature_summary.csv")
-            output_signif_global_csv = str(output_dir / f"{sheet_name}_significance_global.csv")
-            output_signif_pairwise_csv = str(output_dir / f"{sheet_name}_significance_pairwise.csv")
+            # output_csv = str(output_dir / f"{sheet_name}_merged_long.csv")
+            # output_feature_csv = str(output_dir / f"{sheet_name}_feature_summary.csv")
+            # output_signif_global_csv = str(output_dir / f"{sheet_name}_significance_global.csv")
+            # output_signif_pairwise_csv = str(output_dir / f"{sheet_name}_significance_pairwise.csv")
 
-            merged.to_csv(output_csv, index=False, encoding="utf-8-sig")
-            feature_summary.to_csv(output_feature_csv, encoding="utf-8-sig")
-            signif_global_df.to_csv(output_signif_global_csv, index=False, encoding="utf-8-sig")
-            signif_pairwise_df.to_csv(output_signif_pairwise_csv, index=False, encoding="utf-8-sig")
+            # merged.to_csv(output_csv, index=False, encoding="utf-8-sig")
+            # feature_summary.to_csv(output_feature_csv, encoding="utf-8-sig")
+            # signif_global_df.to_csv(output_signif_global_csv, index=False, encoding="utf-8-sig")
+            # signif_pairwise_df.to_csv(output_signif_pairwise_csv, index=False, encoding="utf-8-sig")
 
             plot_power_by_age_group(
                 merged_long=merged,
